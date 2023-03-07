@@ -12,12 +12,14 @@ import Profile from "./components/Profile";
 import BoardUser from "./components/BoardUser";
 import BoardModerator from "./components/BoardModerator";
 import BoardAdmin from "./components/BoardAdmin";
+import Logo from "./components/Logo";
 
 import { logout } from "./actions/auth";
 import { clearMessage } from "./actions/message";
 
 // import AuthVerify from "./common/AuthVerify";
 import EventBus from "./common/EventBus";
+
 
 const App = () => {
   const [showModeratorBoard, setShowModeratorBoard] = useState(false);
@@ -60,7 +62,7 @@ const App = () => {
     <div>
       <nav className="navbar navbar-expand navbar-dark bg-dark">
         <Link to={"/"} className="navbar-brand">
-          bezKoder
+            <Logo height={50} width={250}/>
         </Link>
         <div className="navbar-nav mr-auto">
           <li className="nav-item">
